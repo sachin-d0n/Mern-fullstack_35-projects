@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+      }
+      .sub1{
+        width:100vw;
+        height:75vh;
+        background-color:blueviolet;
+        position:relative;
+        top:0px;
+        left:0px;
+      }
+      .sub1 img{
+   width:100vw;
+   height:75vh;
+      }
+      .sub2{
+        width:100vw;
+        height:25vh;
+        background-color:brown;
+        position:absolute;
+        top:75vh;
+        overflow:hidden;
+        transition: all 2s ease-in-out;
+      }
+      .sub2 img{
+        width:100vw;
+        height:75vh;
+      }
+      .main:hover .sub2{
+        width:100vw;
+        height:75vh;
+        position:absolute;
+        top:25vh;
+        
+      }
+      .sub3{
+        /* background-color:brown; */
+        color:black;
+        position:absolute;
+        top:3vh;
+        left:50px;
+        font-size:x-large;
+      }
+      .sub3 td{
+        padding-left:50px;
+      }
+     .sub4{
+      position:absolute;
+      width:100vw;
+      height:15vh;
+      /* background-color: brown; */
+      font-size:100px; 
+      text-align: center; 
+      top:10vh;  
+      color:white; 
+      transition: all 2s ease-in-out;
+      
+     }
+     .main:hover .sub4{
+        top:82vh;
+        position:absolute;
+        
+     }
+     .main2{
+      width:100vw;
+      height:100vh;
+      background-color:black;
+     }
+     .main2 video{
+      width:100vw;
+      height:100vh;
+      object-fit:cover;
+     }
+     .main3{
+      width:100vw;
+      height:100vh;
+      background-color: black;
+      position: relative;
+     }
+     .box{
+      width:50vw;
+      height:50vh;
+      background-color: aliceblue;
+      overflow: hidden;
+      /* transition: all 2s ease-in-out; */
+     /* transform:scale3d(1.5,1.5,1.5); */
+     }
+     .box:hover img{
+      transform:scale3d(1.5,1.5,1.5);
+      transition: all 1s ease-in-out;
+     }
+     .box img{
+      width:50vw;
+      height:50vh;
+     }
+     .sub31{
+      position:absolute;
+      left:0vw;
+      background-color:firebrick;
+     }
+     .sub32{
+      position:absolute;
+      right:0vw;
+      background-color: blueviolet;
+     }
+      .sub33{
+      position:absolute;
+      left:0vw;
+      top:50vh;
+      background-color: blue;
+     }
+     .sub34{
+      position:absolute;
+      right:0vw;
+      top:50vh;
+      background-color: aquamarine;
+     }
+     .main4{
+      background-color: black;
+      width:100vw;
+      height:20vh;
+      color:white;
+      text-align: center;
+      position:relative;
+      padding-top:50px;
+     }
+     button{
+      background-color: red;
+      padding:10px;
+      color:white;
+      border:2px solid white;
+      border-radius: 10px;
+      width:10vw;
+     }
+     button:hover{
+      background-color: black;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub1"><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWnAdsVoKRhhHD_EjzetXjHp2l1nqvSURTXdJkXHXakQ&s=10" alt="ferari img"></div>
+      <div class="sub2"><img src="https://w0.peakpx.com/wallpaper/872/911/HD-wallpaper-laferrari-auto-car-emblem-ferrari-horse-logo.jpg" alt="ferimage"></div>
+       <div class="sub3"> 
+        <table>
+          <tr>
+            <td>Home</td>
+            <td>Models</td>
+            <td>Bookings</td>
+            <td>Racing</td>
+            <td>Product</td>
+          </tr>
+        </table>
+       </div>
+       <div class="sub4">
+          <div> F  E  R  A  R  I </div>
+       </div>
+    </div>
+    <div class="main2">
+      <video src="racevid.mp4" autoplay loop mute></video>
+    </div>
+    <div class="main3">
+      <div class="box sub31"><img src="https://images.unsplash.com/photo-1610388558394-974601045c25?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZlcnJhcml8ZW58MHx8MHx8fDA%3D"></div>
+      <div class="box sub32"><img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmFyaXxlbnwwfHwwfHx8MA%3D%3D"></div>
+      <div class="box sub33"><img src="https://static.ncr.re/img/580x464/14/143688c89012fea882884b72a47d1323.jpg"></div>
+      <div class="box sub34"><img src="https://toppng.com/public/uploads/preview/ferrari-812-superfast-ferrari-812-ferrari-sports-car-red-11570445107sq4yvcjuhb.jpg"></div>
+    </div>
+<div class="main4">
+    <button>Explore</button>
+    <br>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum nostrum repellat reiciendis nihil adipisci aperiam quasi vitae id at odit assumenda, laborum laboriosam dolore quia neque veniam, totam magnam, rerum saepe deleniti quaerat quidem perspiciatis quisquam. Pariatur hic labore neque repellendus, sit, impedit consectetur doloremque libero, unde consequatur illum?</p>
+</div>
+  </body>
+</html>
