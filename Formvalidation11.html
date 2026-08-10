@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+        position: relative;
+      }
+      .main {
+        background-color: black;
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+      }
+      p {
+        display: inline;
+      }
+      .first {
+        padding-top: 3px;
+      }
+      .second {
+        padding-top: 3px;
+      }
+      .third {
+        padding-top: 3px;
+      }
+      p {
+        font-size: x-large;
+        font-weight: bold;
+        padding-right: 5px;
+      }
+      input {
+        padding: 5px;
+        font-size: large;
+        border-radius: 10px;
+        border: 5px solid grey;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <form onsubmit="return dosome();">
+        <h1>Form Validation</h1>
+        <div class="first">
+          <p for="name">Name</p>
+          <input
+            type="text"
+            placeholder="Enter the name"
+            id="name"
+            name="name"
+          />
+          <br />
+          <span id="f1"></span>
+        </div>
+        <br />
+        <div class="second">
+          <p for="Email">Email</p>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            id="Email"
+            name="Email"
+          />
+          <br />
+          <span id="f2"></span>
+        </div>
+        <br />
+        <div class="third">
+          <p for="number">number</p>
+          <input
+            type="number"
+            placeholder="Enter number"
+            id="number"
+            name="numuber"
+          />
+          <br />
+          <span id="f3"></span>
+        </div>
+        <br />
+        <input type="submit" />
+      </form>
+    </div>
+    <script>
+      function dosome() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("Email").value;
+        let number = document.getElementById("number").value;
+        if (name == "") {
+          document.getElementById("f1").innerHTML = "Name is required";
+          return false;
+        } else {
+          document.getElementById("f1").innerHTML = "";
+        }
+        if (email == "") {
+          document.getElementById("f2").innerHTML = "Email is required";
+          return false;
+        } else {
+          document.getElementById("f2").innerHTML = "";
+        }
+        if (number == "") {
+          document.getElementById("f3").innerHTML = "number is required";
+          return false;
+        } else if (number == isNaN) {
+          document.getElementById("f3").innerHTML = "is not a number";
+          return false;
+        } else {
+          document.getElementById("f2").innerHTML = "";
+        }
+        alert("conform submit form");
+        return true;
+      }
+    </script>
+  </body>
+</html>
